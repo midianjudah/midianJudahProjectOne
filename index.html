@@ -5,8 +5,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Import FONTS -->
     <!-- Don't forget to import cover image in css -->
+    <!-- Google Fonts HERE -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chathura:wght@400;700&family=Tulpen+One&display=swap"
+        rel="stylesheet">
     <!-- Font Awesome KIT -->
     <script src="https://kit.fontawesome.com/f6c3301b7d.js" crossorigin="anonymous"></script>
     <title>Bar-One</title>
@@ -15,19 +19,22 @@
 </head>
 
 <body>
-    <header>
-        <a href="#logo">Bar-One</a>
-        <nav>
-            <ul>
-                <li>Home</li>
-                <li>About</li>
-                <li>Blog</li>
-                <li>Contact</li>
-            </ul>
-        </nav>
+    <header class="homeHeader">
+        <div class="wrapper">
+            <a href="#logo">Bar-One</a>
+            <nav>
+                <ul>
+                    <li><a class="menuItem" href="./index.html">Home</a></li>
+                    <li><a class="menuItem" href="#about">About</a></li>
+                    <li><a class="menuItem" href="./blog.html">Blog</a></li>
+                    <li><a class="menuItem" href="./contact.html">Contact</a></li>
+                </ul>
+            </nav>
 
-        <h1>Bar-One</h1>
-        <h2>Place to be</h2>
+
+            <h1>Bar-One</h1>
+            <h2>Place to be</h2>
+        </div>
 
         <img src="./assets/header-box.jpg" alt="black and white image of wine glasses hanging upside down on bar rack">
 
@@ -183,11 +190,12 @@
         <!-- Gallery Section -->
         <section>
             <div class="gallery wrapper">
-                    <img src="./assets/gallery-image-1.jpg" alt="brightly-lit bar">
-                    
-                    <img src="./assets/gallery-image-2.jpg" alt="bouble-stack hamberger with bacon and cheese frise on the side">
-                    
-                    <img src="./assets/gallery-image-3.jpg"
+                <img src="./assets/gallery-image-1.jpg" alt="brightly-lit bar">
+
+                <img src="./assets/gallery-image-2.jpg"
+                    alt="bouble-stack hamberger with bacon and cheese frise on the side">
+
+                <img src="./assets/gallery-image-3.jpg"
                     alt="redish-brown cocktail served in a highball glass garnished with a halved cherry tomato on a skewer">
             </div>
         </section>
@@ -197,4 +205,5 @@
     <footer>Copyright &copy 2022 Juno College</footer>
 
 </body>
+
 </html>

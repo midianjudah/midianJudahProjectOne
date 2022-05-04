@@ -1,6 +1,19 @@
-/* Import color schematics here */
+/* Import color schematics here, then fonts */
+$white: #FFFFFF;
+$red: #BF2603;
+$orange: #FF8327;
+$black: #111010;
+$darkRed: #220303;
+
+$mainFont: "TulpenOne", cursive;
+$baseFont: "Chathura", sans-serif;
+@import "normalize";
+@import "typography";
+
+
+
 
 /* Import Scss sheet here */
-@import "normalize";
+
 
 /* Import basic background images here */

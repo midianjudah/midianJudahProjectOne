@@ -6,6 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Import FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chathura:wght@400;700&family=Tulpen+One&display=swap"
+        rel="stylesheet">
     <!-- Don't forget to import cover image in css -->
     <!-- Font Awesome KIT -->
     <script src="https://kit.fontawesome.com/f6c3301b7d.js" crossorigin="anonymous"></script>
@@ -15,96 +19,149 @@
 </head>
 
 <body>
-    <header>
-        <a href="#logo">Bar-One</a>
-        <nav>
-            <ul>
-                <li>Home</li>
-                <li>About</li>
-                <li>Blog</li>
-                <li>Contact</li>
-            </ul>
-        </nav>
+    <header class="blogHeader">
+        <div class="wrapper">
+            <a href="#logo">Bar-One</a>
+            <nav>
+                <ul>
+                    <li><a class="menuItem" href="./index.html">Home</a></li>
+                    <li><a class="menuItem" href="#about">About</a></li>
+                    <li><a class="menuItem" href="./blog.html">Blog</a></li>
+                    <li><a class="menuItem" href="./contact.html">Contact</a></li>
+                </ul>
+            </nav>
 
-        <h1>Blog</h1>
+            <h2>Blog</h2>
+        </div>
     </header>
 
     <main>
-        
-<!-- New Menu Section -->
-        <img src="./assets/post-image.jpg" alt="plated food on the pass">
 
-        <h2>New menu!</h2>
-        <h3 class="menuDate">Monday, January 30, 2022 by Sauron</h3>
+        <!-- SideBar Section -->
+        <section>
+            <div class="sideBar">
 
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores in harum ullam dolorum incidunt facere tempore. Voluptatibus doloribus saepe, inventore incidunt ipsum officiis facere facilis, dolorem aut delectus tenetur autem molestias dignissimos accusantium, nihil voluptates beatae itaque! Voluptatibus minus voluptas excepturi! 
-        
-            Quaerat provident totam beatae illum nobis dignissimos, asperiores quisquam adipisci itaque natus, ipsa alias, ut distinctio quam exercitationem illo omnis maxime? Nobis, aliquam aliquid at dignissimos minima blanditiis aut! Magnam, omnis assumenda, laboriosam reiciendis iusto soluta accusamus corrupti neque corporis, officiis exercitationem quibusdam sit blanditiis magni recusandae deserunt?
-            
-            Suscipit fugiat optio maiores itaque nam doloremque magnam laudantium inventore et? Consequuntur repudiandae eligendi ipsam aliquam. Voluptas quis minima hic consequatur et. Obcaecati natus vero eligendi cumque consequuntur! 
-            
-            Possimus illo doloribus odit tempore quidem rerum quasi, obcaecati sint reiciendis? Accusamus et quaerat ad ea. Sequi, maxime. Ullam facilis nam cupiditate perspiciatis nemo minima sed, mollitia exercitationem aperiam eaque eligendi quo qui molestiae aut error commodi non quos? Fugiat pariatur rem nisi similique fuga, mollitia qui iusto omnis debitis in accusantium voluptatem veritatis animi amet aliquam architecto non! Tenetur facilis quo eos ab, explicabo velit modi beatae fugiat earum voluptas. 
-            
-            Enim eos doloribus nam saepe perspiciatis dolore dicta quibusdam illum reiciendis recusandae!</p>
-<!-- New Menu Section end -->
 
-    <section>
-        <div class="sideBar">
+                <div class="sideBarImage">
+                    <img src="./assets/sidebar-image.jpg" alt="ale being poured into a pint glass from a row of taps">
+                </div>
 
-            <img src="./assets/sidebar-image.jpg" alt="ale being poured into a pint glass from a row of taps">
+                <h3>Our mission</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. In nemo voluptates doloribus.</p>
 
-         <h2>Our mission</h2>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. In nemo voluptates doloribus.</p>
+                <button>Find out more.</button>
 
-            <button>Find out more.</button>
+                <h3>Recent Posts</h3>
+                <ul>
+                    <li>Lorem ipsum dolor sit.</li>
+                    <li>Lorem, ipsum dolor.</li>
+                    <li>Lorem, ipsum.</li>
+                    <li>Lorem ipsum dolor sit.</li>
+                </ul>
 
-         <h3>Recent Posts</h3>
-            <ul>
-                <li>Lorem ipsum dolor sit.</li>
-                <li>Lorem, ipsum dolor.</li>
-                <li>Lorem, ipsum.</li>
-                <li>Lorem ipsum dolor sit.</li>
-            </ul>
+            </div>
 
-        </div>
-    </section>
+            <!-- SideBar Section end -->
 
-<!-- COMMENTS Section -->
-    <section>
-        <div class="comments">
-            <h2>Comments:</h2>
-            <img src="./assets/comment-image-1.jpg">
-            <h3 class="commentDate">Tuesday, October 9th, 20221 by Sulaire</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum aperiam voluptatem illum provident maiores magnam cupiditate facere ratione et tempora, accusamus corrupti, veniam ipsam id neque! Labore repellendus vitae sapiente at, accusamus iusto laborum ipsam?</p>
 
-            <img src="./assets/comment-image-2.jpg">
-            <h3 class="commentDate">Wednesday, October 10th, 20221 by Renzo</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam molestias quasi placeat doloribus! Sequi officiis, ipsa porro, similique eius voluptatum earum amet, sapiente nisi cumque quasi consequuntur vitae!</p>
-        </div>
-    </section>
-<!-- COMMENTS Section end -->
+            <!-- New Menu Section -->
+            <div class="menuSection">
+                <div class="menuImage">
+                    <img src="./assets/post-image.jpg" alt="plated food on the pass">
+                </div>
 
-<!-- FORM section -->
-    <section>
-        <form action="#">
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name" placehilder="Name">
+                <h3>New menu!</h3>
+                <h4 class="menuDate">Monday, January 30, 2022 by Sauron</h4>
 
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" placeholder="Email">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores in harum ullam dolorum incidunt
+                    facere tempore. Voluptatibus doloribus saepe, inventore incidunt ipsum officiis facere facilis,
+                    dolorem aut delectus tenetur autem molestias dignissimos accusantium, nihil voluptates beatae
+                    itaque! Voluptatibus minus voluptas excepturi!
 
-            <label for="comment">Comment</label>
-            <textarea name="comment" id="comment" cols="25" rows="10" placeholder="Comment" required maxlength="255"></textarea>
+                    Quaerat provident totam beatae illum nobis dignissimos, asperiores quisquam adipisci itaque natus,
+                    ipsa alias, ut distinctio quam exercitationem illo omnis maxime? Nobis, aliquam aliquid at
+                    dignissimos minima blanditiis aut! Magnam, omnis assumenda, laboriosam reiciendis iusto soluta
+                    accusamus corrupti neque corporis, officiis exercitationem quibusdam sit blanditiis magni recusandae
+                    deserunt?
 
-            <button>Post Comment</button>
-        </form>
-    </section>
-<!-- FORM section end -->
+                    Suscipit fugiat optio maiores itaque nam doloremque magnam laudantium inventore et? Consequuntur
+                    repudiandae eligendi ipsam aliquam. Voluptas quis minima hic consequatur et. Obcaecati natus vero
+                    eligendi cumque consequuntur!
+
+                    Possimus illo doloribus odit tempore quidem rerum quasi, obcaecati sint reiciendis? Accusamus et
+                    quaerat ad ea. Sequi, maxime. Ullam facilis nam cupiditate perspiciatis nemo minima sed, mollitia
+                    exercitationem aperiam eaque eligendi quo qui molestiae aut error commodi non quos? Fugiat pariatur
+                    rem nisi similique fuga, mollitia qui iusto omnis debitis in accusantium voluptatem veritatis animi
+                    amet aliquam architecto non! Tenetur facilis quo eos ab, explicabo velit modi beatae fugiat earum
+                    voluptas.
+
+                    Enim eos doloribus nam saepe perspiciatis dolore dicta quibusdam illum reiciendis recusandae!</p>
+            </div>
+        </section>
+        <!-- New Menu Section end -->
+
+
+        <!-- COMMENTS Section -->
+        <section>
+            <div class="comments wrapper">
+                <h3>Comments:</h3>
+                <div class="commentBox">
+                    <div class="commentImage">
+                        <img src="./assets/comment-image-1.jpg">
+                    </div>
+
+                    <div class="commentText">
+                        <h4 class="commentDate">Tuesday, October 9th, 20221 by Sulaire</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum aperiam voluptatem illum
+                            provident
+                            maiores magnam cupiditate facere ratione et tempora, accusamus corrupti, veniam ipsam id
+                            neque!
+                            Labore repellendus vitae sapiente at, accusamus iusto laborum ipsam?</p>
+                    </div>
+                </div>
+
+                <div class="commentBox">
+                    <div class="commentImage">
+                        <img src="./assets/comment-image-2.jpg">
+                    </div>
+
+                    <div class="commentText">
+                        <h4 class="commentDate">Wednesday, October 10th, 20221 by Renzo</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam molestias quasi placeat
+                            doloribus!
+                            Sequi
+                            officiis, ipsa porro, similique eius voluptatum earum amet, sapiente nisi cumque quasi
+                            consequuntur
+                            vitae!</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- COMMENTS Section end -->
+
+            <!-- FORM section -->
+
+            <form action="#">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placehilder="Name">
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Email">
+
+                <label for="comment">Comment</label>
+                <textarea name="comment" id="comment" cols="25" rows="10" placeholder="Comment" required
+                    maxlength="255"></textarea>
+
+                <button class="postComment">Post Comment</button>
+            </form>
+        </section>
+        <!-- FORM section end -->
 
 
     </main>
 
-        <footer>Copyright &copy 2022 Juno College</footer>
+    <footer>Copyright &copy 2022 Juno College</footer>
 
 </body>
+
 </html>

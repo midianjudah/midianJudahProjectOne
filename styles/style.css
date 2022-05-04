@@ -1,5 +1,4 @@
-/* Import color schematics here */
-/* Import Scss sheet here */
+/* Import color schematics here, then fonts */
 html {
   line-height: 1.15;
   -ms-text-size-adjust: 100%;
@@ -228,4 +227,93 @@ html {
   overflow: hidden;
 }
 
+html {
+  margin: 0;
+  padding: 0;
+  font-size: 125%;
+}
+
+body {
+  font-family: "Chathura", sans-serif;
+  color: #FFFFFF;
+  background-color: #111010;
+}
+
+.wrapper {
+  max-width: 1080px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+h1 {
+  font-family: "TulpenOne", cursive;
+  font-size: 4rem;
+  color: #FF8327;
+  text-align: center;
+  letter-spacing: 2.4px;
+}
+
+h2 {
+  font-family: baseFont;
+  font-weight: bold;
+  font-size: 2.5rem;
+  text-align: center;
+  line-height: 94.7px;
+  letter-spacing: 2.6px;
+}
+
+h3,
+h4 {
+  font-family: "Chathura", sans-serif;
+  font-weight: bold;
+  font-size: 2.3rem;
+  text-align: center;
+  line-height: 58px;
+  letter-spacing: 2.2px;
+}
+
+/* h4 {
+    font-family: baseFont;
+    font-weight: bold;
+    font-size: 2.5rem;
+    text-align: center;
+    line-height: 94.7px;
+    letter-spacing:2.6px;
+} */
+p {
+  font-family: "Chathura", sans-serif;
+  font-size: 1.8rem;
+  line-height: 30px;
+  letter-spacing: 1.9px;
+}
+
+button {
+  font-family: "Chathura", sans-serif;
+  font-size: 1.8rem;
+  text-align: center;
+  line-height: 30px;
+  letter-spacing: 1.9px;
+  background-color: #BF2603;
+  color: #FFFFFF;
+  margin: 0;
+  padding: 6px 28px;
+  border: none;
+}
+button:hover {
+  background-color: #FFFFFF;
+  color: #BF2603;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+}
+
+footer {
+  background-color: rgb(44, 44, 44);
+  text-align: center;
+  margin: 0;
+  padding: 0.1%;
+  color: #FFFFFF;
+  font-size: 1.5rem;
+}
+
+/* Import Scss sheet here */
 /* Import basic background images here */

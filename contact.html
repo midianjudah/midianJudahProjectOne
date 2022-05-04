@@ -6,6 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Import FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chathura:wght@400;700&family=Tulpen+One&display=swap"
+        rel="stylesheet">
     <!-- Don't forget to import cover image in css -->
     <!-- Font Awesome KIT -->
     <script src="https://kit.fontawesome.com/f6c3301b7d.js" crossorigin="anonymous"></script>
@@ -15,56 +19,62 @@
 </head>
 
 <body>
-    <header>
-        <a href="#logo">Bar-One</a>
-        <nav>
-            <ul>
-                <li>Home</li>
-                <li>About</li>
-                <li>Blog</li>
-                <li>Contact</li>
-            </ul>
-        </nav>
+    <header class="contactHeader">
+        <div class="wrapper">
+            <a href="#logo">Bar-One</a>
+            <nav>
+                <ul>
+                    <li><a class="menuItem" href="./index.html">Home</a></li>
+                    <li><a class="menuItem" href="#about">About</a></li>
+                    <li><a class="menuItem" href="./blog.html">Blog</a></li>
+                    <li><a class="menuItem" href="./contact.html">Contact</a></li>
+                </ul>
+            </nav>
 
-        <h1>Get in Touch</h1>
+            <h2>Get in Touch</h2>
+        </div>
     </header>
 
     <main>
 
         <!-- ICON section -->
         <section>
-            <div class="partent">
-                <div class="icons">
-                    <a><i class="fa-brands fa-facebook-f"></i></a>
-                    <a><i class="fa-brands fa-instagram"></i></a>
-                    <a><i class="fa-brands fa-twitter"></i></a>
-                    <a><i class="fa-brands fa-whatsapp"></i></a>
-                </div>
-                <!-- ICON section end -->
+            <div class="wrapper">
+                <div class="parent">
+                    <div class="icons">
+                        <a><i class="fa-brands fa-facebook-f"></i></a>
+                        <a><i class="fa-brands fa-instagram"></i></a>
+                        <a><i class="fa-brands fa-twitter"></i></a>
+                        <a><i class="fa-brands fa-whatsapp"></i></a>
+                    </div>
+                    <!-- ICON section end -->
 
+                    <!-- CONTACT INFO Section -->
+                    <div class="contact">
+                        <p>123 - 456 - 7890<br>
+                            123 Queen Street West,<br>Unit 10<br>Toronto, Ontario<br>M5V2D5</p>
+                    </div>
+                </div>
                 <!-- CONTACT INFO Section -->
-                <div class="contact">
-                    <p>123 - 456 - 7890<br>
-                        123 Queen Street West,<br>Unit 10<br>Toronto, Ontario<br>M5V2D5</p>
+
+
+                <!-- FORM section -->
+                <div class="messageBox">
+                    <form action="#">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placehilder="Name">
+
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Email">
+
+                        <label for="message">Message</label>
+                        <textarea name="message" id="message" cols="25" rows="10" placeholder="Message" required
+                            maxlength="255"></textarea>
+
+                        <button class="submit">Submit</button>
+                    </form>
                 </div>
             </div>
-            <!-- CONTACT INFO Section -->
-
-
-            <!-- FORM section -->
-            <div class="" <form action="#">
-                <label for="name">Name</label>
-                <input type="text" id="name" name="name" placehilder="Name">
-
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" placeholder="Email">
-
-                <label for="message">Message</label>
-                <textarea name="message" id="message" cols="25" rows="10" placeholder="Message" required
-                    maxlength="255"></textarea>
-
-                <button>Post Comment</button>
-                </form>
         </section>
         <!-- FORM section end -->
 
@@ -74,4 +84,5 @@
     <footer>Copyright &copy 2022 Juno College</footer>
 
 </body>
+
 </html>
