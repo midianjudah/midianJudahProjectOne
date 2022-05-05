@@ -1,4 +1,10 @@
 /* Import color schematics here, then fonts */
+/* @import url('https://fonts.googleapis.com/css2?family=Tulpen+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Chathura:wght@700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Chathura&display=swap'); */
+@import url("https://fonts.googleapis.com/css2?family=Tulpen+One&display=swap");
 html {
   line-height: 1.15;
   -ms-text-size-adjust: 100%;
@@ -227,6 +233,9 @@ html {
   overflow: hidden;
 }
 
+/* @import url('https://fonts.googleapis.com/css2?family=Chathura:wght@700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Chathura&display=swap'); */
 html {
   margin: 0;
   padding: 0;
@@ -254,7 +263,7 @@ h1 {
 }
 
 h2 {
-  font-family: baseFont;
+  font-family: "Chathura", sans-serif;
   font-weight: bold;
   font-size: 2.5rem;
   text-align: center;
@@ -313,6 +322,50 @@ footer {
   padding: 0.1%;
   color: #FFFFFF;
   font-size: 1.5rem;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  /* margin-top: 60px; */
+}
+
+nav ul li {
+  margin: 1px 10px;
+}
+
+nav ul li a {
+  font-size: 21px;
+  color: #FFFFFF;
+  padding: 10px 15px;
+  display: inline-block;
+  /* border: none; */
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+nav ul li a:hover,
+nav ul li a:focus {
+  color: #FF8327;
+  /* border-bottom-color: transparent; */
+}
+
+.logo {
+  font-family: "TulpenOne", cursive;
 }
 
 /* Import Scss sheet here */

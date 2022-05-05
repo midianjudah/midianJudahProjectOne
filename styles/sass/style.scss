@@ -5,10 +5,18 @@ $orange: #FF8327;
 $black: #111010;
 $darkRed: #220303;
 
+/* @import url('https://fonts.googleapis.com/css2?family=Tulpen+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Chathura:wght@700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Chathura&display=swap'); */
+
+
 $mainFont: "TulpenOne", cursive;
 $baseFont: "Chathura", sans-serif;
 @import "normalize";
 @import "typography";
+@import "nav";
 
 
 
