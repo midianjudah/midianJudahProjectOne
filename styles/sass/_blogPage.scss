@@ -1,0 +1,76 @@
+/* THE FORM */
+.formBox2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 4%;
+    width: 55%;
+    box-sizing: border-box;
+    /* background: $darkRed; */
+    margin-right: 20px;
+    position: absolute;
+    /* bottom: 60%;
+    right: 62%;
+    transform: translate(-50%, -50%); */
+}
+
+.nameBox2,
+.emailBox2 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    outline: none;
+    border-bottom: 1px solid $orange;
+    letter-spacing: 3px;
+    margin: 0 10px 20px 10px;
+    width: 50%;
+    justify-content: space-between;
+    
+
+    
+
+    input {
+        padding: 0 5px;
+        height: 40px;
+        border: none;
+        background: none;
+        color: $white;
+        font-weight: 100;
+    }
+}
+
+.nameEmail2 {
+    display: flex;
+    
+    label {
+        font-size: 1.4rem;
+    }
+}
+
+.messageBox2 {
+    border: 1px solid $orange;
+    letter-spacing: 3px;
+    color: $white;
+
+    
+        textarea{
+            
+            resize: none;
+            border: none;
+            background: none;
+            color: $white;
+            font-weight: 100;
+            width: 100%;
+            padding: 5%;
+
+            ::placeholder {
+                color: $white;
+            }
+        }
+
+}
+
+.postComment {
+    width: 100%;
+    margin-top: 4%;
+}
