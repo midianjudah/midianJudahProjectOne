@@ -18,7 +18,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 4%;
-    width: 70%;
+    width: 55%;
     box-sizing: border-box;
     background: $darkRed;
     margin-right: 20px;
@@ -40,6 +40,7 @@
     margin: 0 10px 20px 10px;
     width: 50%;
     justify-content: space-between;
+    
 
     
 
@@ -55,6 +56,10 @@
 
 .nameEmail {
     display: flex;
+    
+    label {
+        font-size: 1.4rem;
+    }
 }
 
 .messageBox {

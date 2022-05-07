@@ -444,6 +444,142 @@ a:focus {
   width: calc(33.3333333333% - 24px);
 }
 
+/* ORANGE BOX section */
+.boxShadow {
+  background-color: #220303;
+  height: 700px;
+}
+
+.boxShadowDiv {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  /* position: relative; */
+}
+
+.edisonBar,
+.dayDrinking,
+.planAhead,
+.newLocations {
+  width: 41%;
+}
+.edisonBar img,
+.dayDrinking img,
+.planAhead img,
+.newLocations img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 100%;
+}
+
+.edisonBar {
+  position: relative;
+}
+.edisonBar img {
+  position: absolute;
+  top: -40px;
+  -webkit-box-shadow: 16px 16px #FF8327;
+          box-shadow: 16px 16px #FF8327;
+}
+
+.dayDrinking {
+  position: relative;
+}
+.dayDrinking img {
+  position: absolute;
+  right: 0;
+  -webkit-box-shadow: -16px 16px #FF8327;
+          box-shadow: -16px 16px #FF8327;
+  top: 100px;
+}
+
+.planAhead {
+  text-align: left;
+}
+.planAhead p {
+  padding-right: 5%;
+  margin-top: 1%;
+}
+.planAhead h3 {
+  text-align: left;
+  margin-bottom: 1%;
+}
+
+.newLocations {
+  position: relative;
+  text-align: left;
+  margin-top: 50px;
+}
+.newLocations p {
+  padding-left: 5%;
+  margin-top: 1%;
+}
+.newLocations h3 {
+  text-align: right;
+  margin-bottom: 1%;
+}
+.newLocations button {
+  position: absolute;
+  right: 0;
+}
+
+.party {
+  margin-top: 13%;
+  margin-bottom: 10%;
+  text-align: center;
+}
+.party h3 {
+  color: #FF8327;
+}
+
+/* EVENTS section */
+.events {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 8% 0;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.womanDrinking {
+  width: 22%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.womanDrinking img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 100%;
+  -webkit-box-shadow: -16px 16px #FF8327;
+          box-shadow: -16px 16px #FF8327;
+}
+
+.eventsText {
+  width: 70%;
+}
+.eventsText h3 {
+  margin: 0;
+  text-align: left;
+  color: #FF8327;
+}
+.eventsText p {
+  margin: 0;
+  margin-bottom: 4%;
+}
+
 /* THE FORM - second format */
 /* .formBox {
     width: 70%;
@@ -466,7 +602,7 @@ a:focus {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 4%;
-  width: 70%;
+  width: 55%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   background: #220303;
@@ -514,6 +650,9 @@ a:focus {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+.nameEmail label {
+  font-size: 1.4rem;
 }
 
 .messageBox {
