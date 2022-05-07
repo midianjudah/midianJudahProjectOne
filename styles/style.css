@@ -1,10 +1,4 @@
 /* Import color schematics here, then fonts */
-/* @import url('https://fonts.googleapis.com/css2?family=Tulpen+One&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Chathura:wght@700&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Chathura&display=swap'); */
-@import url("https://fonts.googleapis.com/css2?family=Tulpen+One&display=swap");
 html {
   line-height: 1.15;
   -ms-text-size-adjust: 100%;
@@ -233,6 +227,7 @@ html {
   overflow: hidden;
 }
 
+/* @import url('https://fonts.googleapis.com/css2?family=Tulpen+One&display=swap'); */
 /* @import url('https://fonts.googleapis.com/css2?family=Chathura:wght@700&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Chathura&display=swap'); */
@@ -254,12 +249,23 @@ body {
   margin: 0 auto;
 }
 
+.h1h2 {
+  /* margin: 0 auto; 
+  width: 50%;
+  text-align: center; */
+  z-index: 10;
+  position: relative;
+}
+
 h1 {
-  font-family: "TulpenOne", cursive;
-  font-size: 4rem;
+  font-family: "Tulpen One", cursive;
+  font-size: 6.8rem;
+  font-weight: 500;
   color: #FF8327;
   text-align: center;
   letter-spacing: 2.4px;
+  padding-top: 100px;
+  margin-bottom: 0;
 }
 
 h2 {
@@ -267,8 +273,9 @@ h2 {
   font-weight: bold;
   font-size: 2.5rem;
   text-align: center;
-  line-height: 94.7px;
+  line-height: 0px;
   letter-spacing: 2.6px;
+  margin-top: 0;
 }
 
 h3,
@@ -324,15 +331,8 @@ footer {
   font-size: 1.5rem;
 }
 
-ul {
-  list-style: none;
-}
-
-a {
-  text-decoration: none;
-}
-
 nav ul {
+  list-style: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -341,7 +341,8 @@ nav ul {
           justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  /* margin-top: 60px; */
+  margin: 0;
+  padding: 20px 0;
 }
 
 nav ul li {
@@ -353,19 +354,231 @@ nav ul li a {
   color: #FFFFFF;
   padding: 10px 15px;
   display: inline-block;
-  /* border: none; */
   font-weight: bold;
+  text-decoration: none;
   text-transform: uppercase;
 }
 
 nav ul li a:hover,
 nav ul li a:focus {
   color: #FF8327;
-  /* border-bottom-color: transparent; */
 }
 
 .logo {
-  font-family: "TulpenOne", cursive;
+  font-family: "Tulpen One", cursive;
+  font-size: 25px;
+  margin-top: -5px;
+}
+
+.logo:hover,
+.logo:focus {
+  color: #FFFFFF;
+}
+
+.blurb {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 10% 0;
+}
+.blurb h3 {
+  margin: 0;
+}
+
+.box {
+  width: calc(50% - 40px);
+  margin: 0 10px;
+}
+
+.iconBox {
+  background-color: #BF2603;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-right: 20px;
+}
+
+.headlineBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.headlineBox a {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+a:hover,
+a:focus {
+  color: #FF8327;
+}
+
+.beerDiv {
+  height: 60vh;
+  background-image: url(../assets/banner-image.jpg);
+}
+
+.gallery {
+  background-color: #220303;
+  padding: 5% 0;
+}
+
+.galleryBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.galleryBox img {
+  margin: 12px;
+  width: calc(33.3333333333% - 24px);
+}
+
+/* THE FORM - second format */
+/* .formBox {
+    width: 70%;
+
+}
+
+.nameBox,
+.emailBox {
+    display: flex;
+    width: 40%;
+} */
+/* THE FORM - first format */
+.formBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 4%;
+  width: 70%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background: #220303;
+  margin-right: 20px;
+  position: absolute;
+  top: 60%;
+  left: 62%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-box-shadow: 16px 16px #FF8327;
+          box-shadow: 16px 16px #FF8327;
+}
+
+.nameBox,
+.emailBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  outline: none;
+  border-bottom: 2px solid #FFFFFF;
+  letter-spacing: 3px;
+  margin: 0 10px 20px 10px;
+  width: 50%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.nameBox input,
+.emailBox input {
+  padding: 0 5px;
+  height: 40px;
+  border: none;
+  background: none;
+  color: #FFFFFF;
+  font-weight: 100;
+}
+
+.nameEmail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.messageBox {
+  border: 2px solid #FFFFFF;
+  letter-spacing: 3px;
+  color: #FFFFFF;
+}
+.messageBox textarea {
+  resize: none;
+  border: none;
+  background: none;
+  color: #FFFFFF;
+  font-weight: 100;
+  width: 100%;
+  padding: 5%;
+}
+.messageBox textarea ::-webkit-input-placeholder {
+  color: #FFFFFF;
+}
+.messageBox textarea ::-moz-placeholder {
+  color: #FFFFFF;
+}
+.messageBox textarea :-ms-input-placeholder {
+  color: #FFFFFF;
+}
+.messageBox textarea ::-ms-input-placeholder {
+  color: #FFFFFF;
+}
+.messageBox textarea ::placeholder {
+  color: #FFFFFF;
+}
+
+.submit {
+  width: 100%;
+  margin-top: 4%;
+}
+
+/* Cover Images */
+.homeHeader {
+  background-image: url(../assets/home-image-1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 85vh;
+  position: relative;
+}
+
+.wine {
+  position: absolute;
+  right: 0px;
+  top: 300px;
+  width: 700px;
+  height: 500px;
+}
+
+.wine img {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.blogHeader {
+  background-image: url(../assets/blog-header-1.jpg);
+}
+
+.contactHeader {
+  background-image: url(../assets/contact-header-1.jpg);
 }
 
 /* Import Scss sheet here */

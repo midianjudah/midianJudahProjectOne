@@ -13,7 +13,7 @@
     <!-- Don't forget to import cover image in css -->
     <!-- Font Awesome KIT -->
     <script src="https://kit.fontawesome.com/f6c3301b7d.js" crossorigin="anonymous"></script>
-    <title>Bar-One</title>
+    <title>Bar-One Blog</title>
     <!-- Import SCSS file -->
     <link rel="stylesheet" href="styles/style.css">
 </head>
@@ -141,19 +141,27 @@
 
             <!-- FORM section -->
 
-            <form action="#">
-                <label for="name">Name</label>
-                <input type="text" id="name" name="name" placehilder="Name">
+            <div class="formBox">
+                <form action="#">
+                    <div class="nameBox">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placehilder="Name">
+                    </div>
 
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" placeholder="Email">
+                    <div class="emailBox">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Email">
+                    </div>
 
-                <label for="comment">Comment</label>
-                <textarea name="comment" id="comment" cols="25" rows="10" placeholder="Comment" required
-                    maxlength="255"></textarea>
+                    <div class="messageBox">
+                        <label for="comment">Comment</label>
+                        <textarea name="comment" id="comment" cols="25" rows="10" placeholder="comment" required
+                            maxlength="255"></textarea>
+                    </div>
 
-                <button class="postComment">Post Comment</button>
-            </form>
+                    <button class="submit">Submit</button>
+                </form>
+            </div>
         </section>
         <!-- FORM section end -->
 

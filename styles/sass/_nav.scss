@@ -1,17 +1,10 @@
-ul {
-    list-style: none;
-}
-
-a {
-    text-decoration: none;
-}
-
-
 nav ul {
+	list-style: none;
 	display: flex;
 	justify-content: center;
 	flex-wrap: wrap;
-	/* margin-top: 60px; */
+	margin: 0;
+	padding: 20px 0;
 }
 
 nav ul li {
@@ -23,8 +16,8 @@ nav ul li a {
 	color: $white;
 	padding: 10px 15px;
 	display: inline-block;
-	/* border: none; */
 	font-weight: bold;
+	text-decoration: none;
 	text-transform: uppercase;
     
 }
@@ -32,10 +25,15 @@ nav ul li a {
 nav ul li a:hover,
 nav ul li a:focus {
     color: $orange;
-	/* border-bottom-color: transparent; */
 }
 
 .logo {
     font-family: $mainFont;
+	font-size: 25px;
+	margin-top: -5px;
+}
 
+.logo:hover,
+.logo:focus {
+	color: $white;
 }

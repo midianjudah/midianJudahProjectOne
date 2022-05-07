@@ -1,0 +1,60 @@
+.blurb {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10% 0;
+
+    h3 {
+        margin: 0;
+    }
+}
+
+.box {
+    width: calc(100% / 2 - 40px);
+    margin: 0 10px;
+}
+
+.iconBox {
+    background-color: $red;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-right: 20px;
+}
+
+.headlineBox {
+    display: flex;
+
+    a {
+        text-decoration: none;
+        color: $white;
+    }
+}
+
+a:hover,
+a:focus {
+        color: $orange;
+        
+    }
+
+.beerDiv {
+    height: 60vh;
+    background-image: url(../assets/banner-image.jpg);
+}
+
+.gallery {
+    background-color: $darkRed;
+    padding: 5% 0;
+}
+
+.galleryBox {
+    display: flex;
+
+    img {
+        margin: 12px;
+        width: calc(100% / 3 - 24px);
+        
+    }
+}

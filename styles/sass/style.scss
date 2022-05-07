@@ -5,19 +5,47 @@ $orange: #FF8327;
 $black: #111010;
 $darkRed: #220303;
 
-/* @import url('https://fonts.googleapis.com/css2?family=Tulpen+One&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Chathura:wght@700&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Chathura&display=swap'); */
 
 
-$mainFont: "TulpenOne", cursive;
+
+$mainFont: "Tulpen One", cursive;
 $baseFont: "Chathura", sans-serif;
 @import "normalize";
 @import "typography";
 @import "nav";
+@import "homePage";
+@import "contactPage";
 
+
+/* Cover Images */
+.homeHeader {
+    background-image: url(../assets/home-image-1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 85vh;
+    position: relative;
+}
+
+.wine {
+    position: absolute;
+    right: 0px;
+    top: 300px;
+    width: 700px;
+    height: 500px;
+}
+
+.wine img {
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.blogHeader {
+    background-image: url(../assets/blog-header-1.jpg);
+}
+
+.contactHeader {
+    background-image: url(../assets/contact-header-1.jpg);
+}
 
 
 
