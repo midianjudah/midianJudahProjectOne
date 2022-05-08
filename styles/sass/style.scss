@@ -7,9 +7,11 @@ $darkRed: #220303;
 
 
 
-
+/* Import Fonts */
 $mainFont: "Tulpen One", cursive;
 $baseFont: "Chathura", sans-serif;
+
+/* Import Scss sheet here */
 @import "normalize";
 @import "typography";
 @import "nav";
@@ -18,7 +20,7 @@ $baseFont: "Chathura", sans-serif;
 @import "blogPage";
 
 
-/* Cover Images */
+/* INDEX Cover Images */
 .homeHeader {
     background-image: url(../assets/home-image-1.jpg);
     background-size: cover;
@@ -40,17 +42,19 @@ $baseFont: "Chathura", sans-serif;
     max-width: 100%;
 }
 
+/* Background Images for adjascent pages */
 .blogHeader {
     background-image: url(../assets/blog-header-1.jpg);
+    background-size: cover;
+    background-repeat: none;
+    height: 85vh;
+    position: relative;
 }
 
 .contactHeader {
     background-image: url(../assets/contact-header-1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 85vh;
+    position: relative;
 }
-
-
-
-/* Import Scss sheet here */
-
-
-/* Import basic background images here */

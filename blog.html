@@ -38,7 +38,7 @@
     <main>
 
         <!-- SideBar Section -->
-        <section>
+        <section class="parentDiv">
             <div class="sideBar">
 
 
@@ -46,19 +46,20 @@
                     <img src="./assets/sidebar-image.jpg" alt="ale being poured into a pint glass from a row of taps">
                 </div>
 
-                <h3>Our mission</h3>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. In nemo voluptates doloribus.</p>
+                <div class="missionPost">
+                    <h3>Our mission</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. In nemo voluptates doloribus.</p>
 
-                <button>Find out more.</button>
+                    <a href="#">Find out more.</a>
 
-                <h3>Recent Posts</h3>
-                <ul>
-                    <li>Lorem ipsum dolor sit.</li>
-                    <li>Lorem, ipsum dolor.</li>
-                    <li>Lorem, ipsum.</li>
-                    <li>Lorem ipsum dolor sit.</li>
-                </ul>
-
+                    <h3>Recent Posts</h3>
+                    <ul>
+                        <li><span>Lorem ipsum dolor sit.</span></li>
+                        <li><span>Lorem, ipsum dolor.</span></li>
+                        <li><span>Lorem, ipsum.</span></li>
+                        <li><span>Lorem ipsum dolor sit.</span></li>
+                    </ul>
+                </div>
             </div>
 
             <!-- SideBar Section end -->
@@ -69,33 +70,36 @@
                 <div class="menuImage">
                     <img src="./assets/post-image.jpg" alt="plated food on the pass">
                 </div>
+                <div class="menuText">
+                    <h3>New menu!</h3>
+                    <h4 class="menuDate">Monday, January 30, 2022 by Sauron</h4>
 
-                <h3>New menu!</h3>
-                <h4 class="menuDate">Monday, January 30, 2022 by Sauron</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores in harum ullam dolorum incidunt
+                        facere tempore.
+                        Voluptatibus doloribus saepe, inventore incidunt ipsum officiis facere facilis,
+                        dolorem aut delectus tenetur autem molestias dignissimos accusantium, nihil voluptates beatae
+                        itaque! Voluptatibus minus voluptas excepturi!</p>
 
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores in harum ullam dolorum incidunt
-                    facere tempore. Voluptatibus doloribus saepe, inventore incidunt ipsum officiis facere facilis,
-                    dolorem aut delectus tenetur autem molestias dignissimos accusantium, nihil voluptates beatae
-                    itaque! Voluptatibus minus voluptas excepturi!
+                        <p>Quaerat provident totam beatae illum nobis dignissimos, asperiores quisquam adipisci itaque
+                        natus,
+                        ipsa alias, ut distinctio quam exercitationem illo omnis maxime? Nobis, aliquam aliquid at
+                        dignissimos minima blanditiis aut! Magnam, omnis assumenda, laboriosam reiciendis iusto soluta
+                        accusamus corrupti neque corporis, officiis exercitationem quibusdam sit blanditiis magni
+                        recusandae
+                        deserunt?</p>
 
-                    Quaerat provident totam beatae illum nobis dignissimos, asperiores quisquam adipisci itaque natus,
-                    ipsa alias, ut distinctio quam exercitationem illo omnis maxime? Nobis, aliquam aliquid at
-                    dignissimos minima blanditiis aut! Magnam, omnis assumenda, laboriosam reiciendis iusto soluta
-                    accusamus corrupti neque corporis, officiis exercitationem quibusdam sit blanditiis magni recusandae
-                    deserunt?
+                        <p>Suscipit fugiat optio maiores itaque nam doloremque magnam laudantium inventore et? Consequuntur
+                        repudiandae eligendi ipsam aliquam. Voluptas quis minima hic consequatur et. Obcaecati natus
+                        vero
+                        eligendi cumque consequuntur!</p>
 
-                    Suscipit fugiat optio maiores itaque nam doloremque magnam laudantium inventore et? Consequuntur
-                    repudiandae eligendi ipsam aliquam. Voluptas quis minima hic consequatur et. Obcaecati natus vero
-                    eligendi cumque consequuntur!
-
-                    Possimus illo doloribus odit tempore quidem rerum quasi, obcaecati sint reiciendis? Accusamus et
-                    quaerat ad ea. Sequi, maxime. Ullam facilis nam cupiditate perspiciatis nemo minima sed, mollitia
-                    exercitationem aperiam eaque eligendi quo qui molestiae aut error commodi non quos? Fugiat pariatur
-                    rem nisi similique fuga, mollitia qui iusto omnis debitis in accusantium voluptatem veritatis animi
-                    amet aliquam architecto non! Tenetur facilis quo eos ab, explicabo velit modi beatae fugiat earum
-                    voluptas.
-
-                    Enim eos doloribus nam saepe perspiciatis dolore dicta quibusdam illum reiciendis recusandae!</p>
+                        <p>Possimus illo doloribus odit tempore quidem rerum quasi, obcaecati sint reiciendis? Accusamus et
+                        quaerat ad ea. Sequi, maxime. Ullam facilis nam cupiditate perspiciatis nemo minima sed,
+                        mollitia
+                        exercitationem aperiam eaque eligendi quo qui molestiae aut error commodi non quos?
+                        Enim eos doloribus nam saepe perspiciatis dolore dicta quibusdam illum reiciendis recusandae!</p>
+                    </p>
+                </div>
             </div>
         </section>
         <!-- New Menu Section end -->
@@ -103,7 +107,7 @@
 
         <!-- COMMENTS Section -->
         <section>
-            <div class="comments wrapper">
+            <div class="comments">
                 <h3>Comments:</h3>
                 <div class="commentBox">
                     <div class="commentImage">
@@ -135,35 +139,37 @@
                             vitae!</p>
                     </div>
                 </div>
+
+                <div class="formBox2">
+                    <form action="#">
+                        <div class="nameEmail2">
+                            <div class="nameBox2">
+                                <label for="name">Name</label>
+                                <input type="text" id="name" name="name" placeholder="">
+                            </div>
+    
+                            <div class="emailBox2">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" placeholder="">
+                            </div>
+                        </div>
+    
+                        <div class="messageBox2">
+    
+                            <textarea name="comment" id="comment" cols="25" rows="5" placeholder="Comment" required
+                                maxlength="255"></textarea>
+                        </div>
+    
+                        <button class="postComment">Post Comment</button>
+                    </form>
+                </div>
             </div>
 
             <!-- COMMENTS Section end -->
 
             <!-- FORM section -->
 
-            <div class="formBox2">
-                <form action="#">
-                    <div class="nameEmail2">
-                        <div class="nameBox2">
-                            <label for="name">Name</label>
-                            <input type="text" id="name" name="name" placeholder="">
-                        </div>
-
-                        <div class="emailBox2">
-                            <label for="email">Email</label>
-                            <input type="email" id="email" name="email" placeholder="">
-                        </div>
-                    </div>
-
-                    <div class="messageBox2">
-
-                        <textarea name="comment" id="comment" cols="25" rows="10" placeholder="Comment" required
-                            maxlength="255"></textarea>
-                    </div>
-
-                    <button class="postComment">Post Comment</button>
-                </form>
-            </div>
+            
         </section>
         <!-- FORM section end -->
 

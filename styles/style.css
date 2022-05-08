@@ -1,4 +1,6 @@
 /* Import color schematics here, then fonts */
+/* Import Fonts */
+/* Import Scss sheet here */
 html {
   line-height: 1.15;
   -ms-text-size-adjust: 100%;
@@ -296,7 +298,7 @@ h4 {
     line-height: 94.7px;
     letter-spacing:2.6px;
 } */
-p {
+p, a {
   font-family: "Chathura", sans-serif;
   font-size: 1.8rem;
   line-height: 30px;
@@ -362,6 +364,8 @@ nav ul li a {
 nav ul li a:hover,
 nav ul li a:focus {
   color: #FF8327;
+  -webkit-transition: 0.4s ease-in;
+  transition: 0.4s ease-in;
 }
 
 .logo {
@@ -679,6 +683,183 @@ a:focus {
   margin-top: 4%;
 }
 
+/* PARENT section */
+.parentDiv {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+/* SIDEBAR Section */
+.sideBar {
+  width: 28%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.sideBarImage {
+  width: 100%;
+  -webkit-box-shadow: 16px 0 #220303;
+          box-shadow: 16px 0 #220303;
+  margin-top: 13%;
+}
+.sideBarImage img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 100%;
+}
+
+.missionPost {
+  background-color: #220303;
+  text-align: left;
+  padding: 0 4%;
+  width: 80%;
+  -webkit-box-shadow: 16px 0px #220303;
+          box-shadow: 16px 0px #220303;
+}
+.missionPost a {
+  color: #FF8327;
+  text-decoration: none;
+  padding-bottom: 5%;
+}
+.missionPost ul {
+  margin-top: 0;
+}
+.missionPost h3 {
+  margin: 0;
+  padding-top: 5%;
+  text-align: left;
+}
+.missionPost P {
+  margin: 0;
+}
+.missionPost li {
+  font-size: 1.5rem;
+  color: #BF2603;
+  line-height: 30px;
+}
+.missionPost li span {
+  color: #FFFFFF;
+}
+
+/* MENU Section */
+.menuSection {
+  width: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.menuImage {
+  width: 100%;
+}
+.menuImage img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 100%;
+  -webkit-box-shadow: -16px 16px #FF8327;
+          box-shadow: -16px 16px #FF8327;
+}
+
+.menuText {
+  width: 100%;
+  border-left: 5px solid #FF8327;
+  border-bottom: 5px solid #FF8327;
+  padding: 5% 8%;
+  text-align: left;
+}
+.menuText h3 {
+  text-align: left;
+  margin-bottom: 0;
+  line-height: 20px;
+}
+.menuText h4 {
+  text-align: left;
+  color: #FF8327;
+  margin-top: 0;
+  font-size: 1.5rem;
+}
+
+/* COMMENTS Section */
+.comments {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding-bottom: 6%;
+}
+.comments h3 {
+  margin: 7% 0 0 0;
+  text-align: center;
+  line-height: 30px;
+}
+
+.commentBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 4% 0;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 60%;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.commentImage {
+  width: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.commentImage img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 100%;
+}
+
+.commentText {
+  width: 77%;
+  text-align: left;
+}
+.commentText h4 {
+  text-align: left;
+  color: #FF8327;
+  font-size: 1.7rem;
+  margin: 0;
+  line-height: 20px;
+}
+.commentText p {
+  padding-right: 2%;
+}
+
 /* THE FORM */
 .formBox2 {
   display: -webkit-box;
@@ -686,19 +867,13 @@ a:focus {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding: 4%;
-  width: 55%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 70%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  /* background: $darkRed; */
-  margin-right: 20px;
-  position: absolute;
-  /* bottom: 60%;
-  right: 62%;
-  transform: translate(-50%, -50%); */
+  -ms-flex-item-align: end;
+      align-self: end;
 }
 
 .nameBox2,
@@ -775,7 +950,7 @@ a:focus {
   margin-top: 4%;
 }
 
-/* Cover Images */
+/* INDEX Cover Images */
 .homeHeader {
   background-image: url(../assets/home-image-1.jpg);
   background-size: cover;
@@ -797,13 +972,19 @@ a:focus {
   max-width: 100%;
 }
 
+/* Background Images for adjascent pages */
 .blogHeader {
   background-image: url(../assets/blog-header-1.jpg);
+  background-size: cover;
+  background-repeat: none;
+  height: 85vh;
+  position: relative;
 }
 
 .contactHeader {
   background-image: url(../assets/contact-header-1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 85vh;
+  position: relative;
 }
-
-/* Import Scss sheet here */
-/* Import basic background images here */
