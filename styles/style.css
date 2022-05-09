@@ -585,6 +585,17 @@ a:focus {
 }
 
 /* THE FORM - first format */
+.contactHeader h2 {
+  font-size: 4rem;
+  text-align: left;
+  margin-top: 20%;
+}
+
+.iconSection {
+  position: relative;
+  /* padding-bottom: 10%; */
+}
+
 .formBox {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -601,8 +612,8 @@ a:focus {
   background: #220303;
   margin-right: 20px;
   position: absolute;
-  top: 60%;
-  left: 62%;
+  top: 10%;
+  right: -25%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   -webkit-box-shadow: 16px 16px #FF8327;
@@ -683,7 +694,34 @@ a:focus {
   margin-top: 4%;
 }
 
+.parent {
+  width: 22%;
+  margin: 10% 0;
+}
+
+.icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 10%;
+}
+.icons p {
+  margin: 0;
+}
+.icons a {
+  font-size: 1.1rem;
+  margin-right: 10%;
+}
+
 /* PARENT section */
+.blogHeader h2 {
+  font-size: 4rem;
+  text-align: left;
+  margin-top: 20%;
+}
+
 .parentDiv {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -691,6 +729,8 @@ a:focus {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  position: relative;
+  padding-bottom: 15%;
 }
 
 /* SIDEBAR Section */
@@ -763,6 +803,9 @@ a:focus {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  position: absolute;
+  top: -17%;
+  right: 0;
 }
 
 .menuImage {
@@ -808,6 +851,7 @@ a:focus {
       -ms-flex-pack: end;
           justify-content: flex-end;
   padding-bottom: 6%;
+  margin-top: 21%;
 }
 .comments h3 {
   margin: 7% 0 0 0;
@@ -978,13 +1022,11 @@ a:focus {
   background-size: cover;
   background-repeat: none;
   height: 85vh;
-  position: relative;
 }
 
 .contactHeader {
   background-image: url(../assets/contact-header-1.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  height: 85vh;
-  position: relative;
+  height: 65vh;
 }

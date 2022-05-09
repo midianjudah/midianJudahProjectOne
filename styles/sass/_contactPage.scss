@@ -1,4 +1,15 @@
 /* THE FORM - first format */
+.contactHeader h2 {
+    font-size: 4rem;
+    text-align: left;
+    margin-top: 20%;
+}
+
+.iconSection {
+    position: relative;
+    /* padding-bottom: 10%; */
+}
+
 .formBox {
     display: flex;
     flex-wrap: wrap;
@@ -9,8 +20,8 @@
     background: $darkRed;
     margin-right: 20px;
     position: absolute;
-    top: 60%;
-    left: 62%;
+    top: 10%;
+    right: -25%;
     transform: translate(-50%, -50%);
     box-shadow: 16px 16px $orange;
 }
@@ -76,3 +87,22 @@
     margin-top: 4%;
 }
 
+.parent {
+    width: 22%;
+    margin: 10% 0;
+}
+
+.icons {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 10%;
+
+    p {
+        margin: 0;
+    }
+
+    a {
+        font-size: 1.1rem;
+        margin-right: 10%;
+    }
+}
