@@ -1,1 +1,266 @@
-/* THREE breakpoints maximum */
+/* THREE breakpoints minimum */
+
+/* 1300px */
+@media (max-width: 1300px) {
+    .comments {
+        margin-top: 38%;
+        align-items: center;
+        width: 70%;
+    }
+
+    .commentBox {
+        width: 100%;
+        padding-left: 5%;
+    }
+
+    .commentText {
+        padding-right: 6%;
+    }
+
+    .formBox textArea {
+        width: 80%;
+    }
+
+    .formBox2 {
+        width: 100%;
+    }
+
+}
+
+/* 1000px */
+@media (max-width: 1000px) {
+    .wine {
+        display: none;
+    }
+
+    .newLocations {
+        margin-top: 0;
+    }
+
+    .planAhead {
+        height: 300px;
+    }
+
+    .comments {
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 60%;
+    }
+
+    .formBox2 {
+        width: 100%;
+    }
+
+    .messageBox,
+    .submit {
+        width: 85%;
+    }
+
+    .nameBox,
+    .emailBox {
+        width: 38%;
+    }
+
+}
+
+/*  900px */
+@media (max-width: 900px) {
+
+    .blurb {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .box {
+        width: 100%;
+        padding: 0 10%;
+    }
+
+    .boxShadow {
+        height: auto;
+    }
+
+    .boxShadowDiv {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        img, button {
+            position: static;
+            box-shadow: none;
+        }
+    }
+
+    .edisonBar, 
+    .planAhead, 
+    .dayDrinking, 
+    .newLocations {
+        width: 100%;
+        margin: 8% 10%;
+        text-align: center;
+        height: auto;
+
+        p, h3 {
+            text-align: center;
+            padding: 2% 5% 1% 5%;
+            margin: 0;
+        }
+    }
+
+    .edisonBar,
+    .dayDrinking {
+        width: 80%;
+
+        img {
+            width: 80%;
+            /* Images will not center!!! I cannot identify what is pushing them to the right. */
+        }
+    }
+
+    .parentDiv {
+        flex-direction: column;
+        justify-content: center;
+        padding-bottom: 5%;
+    }
+
+    .sideBar,
+    .sideBarImage,
+    .missionPost {
+        width: 100%;
+    }
+
+    /* .missionPost {
+        width: 100%;
+    } */
+
+    .menuSection {
+        width: 100%;
+        position: static;
+    }
+
+    .menuImage {
+        width: 100%;
+        align-items: center;
+        border-bottom: 11px solid $orange;
+
+        img {
+            box-shadow: none;
+        }
+    }
+
+    .menuText {
+        border: 5px solid $orange;
+    }
+
+    .comments {
+        margin-top: 2%;
+    }
+
+    /* Contact */
+
+    .iconSection {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .parent {
+        width: 80%;
+        margin-top: 65%;
+    }
+
+    .formBox {
+        top: 20%;
+        left: 50%;
+        width: 100%;
+    }
+
+}
+
+/* 500px */
+
+
+/* NAVIGATION */
+@media (max-width: 500px) {
+    ul {
+        flex-direction: column;
+    }
+
+    .logo {
+        color: $orange;
+    }
+
+    .nameEmail {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .submit,
+    .messageBox,
+    .emailBox,
+    .nameBox {
+        width: 95%;
+    }
+
+    .iconSection {
+        margin-top: 20%;
+    }
+
+    .parent {
+        padding-top: 50%;
+        margin-top: 80%;
+    }
+
+    /* HOME */
+
+    h1 {
+        padding-top: 0;
+    }
+
+    .beerDiv {
+        display: none;
+    }
+
+    .womanDrinking {
+        display: none;
+    }
+
+    .events {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+
+        h3 {
+            text-align: center;
+        }
+    }
+
+    .galleryBox {
+        flex-direction: column;
+        align-items: center;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .formBox2 {
+        align-self: center;
+        
+    }
+
+    .nameEmail2 {
+        flex-direction: column;
+    }
+
+    .nameBox2,
+    .emailBox2 {
+        width: 100%;
+    }
+
+}

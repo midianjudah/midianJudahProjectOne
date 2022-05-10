@@ -593,7 +593,6 @@ a:focus {
 
 .iconSection {
   position: relative;
-  /* padding-bottom: 10%; */
 }
 
 .formBox {
@@ -610,7 +609,7 @@ a:focus {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   background: #220303;
-  margin-right: 20px;
+  margin-right: 5%;
   position: absolute;
   top: 10%;
   right: -25%;
@@ -635,7 +634,7 @@ a:focus {
   border-bottom: 2px solid #FFFFFF;
   letter-spacing: 3px;
   margin: 0 10px 20px 10px;
-  width: 50%;
+  width: 48%;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -644,6 +643,7 @@ a:focus {
 .emailBox input {
   padding: 0 5px;
   height: 40px;
+  /* width: 48%; */
   border: none;
   background: none;
   color: #FFFFFF;
@@ -994,6 +994,316 @@ a:focus {
   margin-top: 4%;
 }
 
+/* THREE breakpoints minimum */
+/* 1300px */
+@media (max-width: 1300px) {
+  .comments {
+    margin-top: 38%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 70%;
+  }
+
+  .commentBox {
+    width: 100%;
+    padding-left: 5%;
+  }
+
+  .commentText {
+    padding-right: 6%;
+  }
+
+  .formBox textArea {
+    width: 80%;
+  }
+
+  .formBox2 {
+    width: 100%;
+  }
+}
+/* 1000px */
+@media (max-width: 1000px) {
+  .wine {
+    display: none;
+  }
+
+  .newLocations {
+    margin-top: 0;
+  }
+
+  .planAhead {
+    height: 300px;
+  }
+
+  .comments {
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 60%;
+  }
+
+  .formBox2 {
+    width: 100%;
+  }
+
+  .messageBox,
+.submit {
+    width: 85%;
+  }
+
+  .nameBox,
+.emailBox {
+    width: 38%;
+  }
+}
+/*  900px */
+@media (max-width: 900px) {
+  .blurb {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+  }
+
+  .box {
+    width: 100%;
+    padding: 0 10%;
+  }
+
+  .boxShadow {
+    height: auto;
+  }
+
+  .boxShadowDiv {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .boxShadowDiv img, .boxShadowDiv button {
+    position: static;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+
+  .edisonBar,
+.planAhead,
+.dayDrinking,
+.newLocations {
+    width: 100%;
+    margin: 8% 10%;
+    text-align: center;
+    height: auto;
+  }
+  .edisonBar p, .edisonBar h3,
+.planAhead p,
+.planAhead h3,
+.dayDrinking p,
+.dayDrinking h3,
+.newLocations p,
+.newLocations h3 {
+    text-align: center;
+    padding: 2% 5% 1% 5%;
+    margin: 0;
+  }
+
+  .edisonBar,
+.dayDrinking {
+    width: 80%;
+  }
+  .edisonBar img,
+.dayDrinking img {
+    width: 80%;
+    /* Images will not center!!! I cannot identify what is pushing them to the right. */
+  }
+
+  .parentDiv {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-bottom: 5%;
+  }
+
+  .sideBar,
+.sideBarImage,
+.missionPost {
+    width: 100%;
+  }
+
+  /* .missionPost {
+      width: 100%;
+  } */
+  .menuSection {
+    width: 100%;
+    position: static;
+  }
+
+  .menuImage {
+    width: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border-bottom: 11px solid #FF8327;
+  }
+  .menuImage img {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+
+  .menuText {
+    border: 5px solid #FF8327;
+  }
+
+  .comments {
+    margin-top: 2%;
+  }
+
+  /* Contact */
+  .iconSection {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  .parent {
+    width: 80%;
+    margin-top: 65%;
+  }
+
+  .formBox {
+    top: 20%;
+    left: 50%;
+    width: 100%;
+  }
+}
+/* 500px */
+/* NAVIGATION */
+@media (max-width: 500px) {
+  ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .logo {
+    color: #FF8327;
+  }
+
+  .nameEmail {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+  }
+
+  .submit,
+.messageBox,
+.emailBox,
+.nameBox {
+    width: 95%;
+  }
+
+  .iconSection {
+    margin-top: 20%;
+  }
+
+  .parent {
+    padding-top: 50%;
+    margin-top: 80%;
+  }
+
+  /* HOME */
+  h1 {
+    padding-top: 0;
+  }
+
+  .beerDiv {
+    display: none;
+  }
+
+  .womanDrinking {
+    display: none;
+  }
+
+  .events {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+    width: 100%;
+  }
+  .events h3 {
+    text-align: center;
+  }
+
+  .galleryBox {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .galleryBox img {
+    width: 100%;
+  }
+
+  .formBox2 {
+    -ms-flex-item-align: center;
+        align-self: center;
+  }
+
+  .nameEmail2 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .nameBox2,
+.emailBox2 {
+    width: 100%;
+  }
+}
 /* INDEX Cover Images */
 .homeHeader {
   background-image: url(../assets/home-image-1.jpg);
