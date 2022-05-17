@@ -1004,7 +1004,7 @@ a:focus {
 }
 
 .popup {
-  background-color: #fff;
+  background-color: #111010;
   width: 450px;
   padding: 30px 40px;
   position: absolute;
@@ -1012,32 +1012,37 @@ a:focus {
           transform: translate(-50%, -50%);
   left: 50%;
   top: 50%;
-  border-radius: 5px;
+  border: 1px solid #FFFFFF;
+  display: none;
+  z-index: 90;
 }
 .popup h2 {
   font-family: "Tulpen One", cursive;
   text-align: center;
+  padding: 10%;
 }
 .popup p {
   font-family: "Chathura", sans-serif;
   text-align: center;
+  margin-bottom: 4%;
 }
 .popup a {
   display: block;
   width: 150px;
   position: relative;
-  margin: auto;
+  margin: 0 auto;
   text-decoration: none;
   text-align: center;
   background-color: #BF2603;
   font-family: "Chathura", sans-serif;
   font-size: 1.8rem;
   line-height: 30px;
-  margin: 0;
   padding: 6px 28px;
   border: none;
   letter-spacing: 1.9px;
   text-transform: capitalize;
+  text-decoration: none;
+  color: #FFFFFF;
 }
 .popup a a:hover,
 .popup a a:focus {
